@@ -1,0 +1,292 @@
+<html lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Opsidian Computer Shop
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+    /* Logo animation */
+    @keyframes spin-slow {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    .animate-spin-slow {
+      animation: spin-slow 10s linear infinite;
+    }
+  </style>
+ </head>
+ <body class="bg-white text-blue-900">
+  <!-- Navbar -->
+  <nav class="bg-blue-700 text-white shadow-md sticky top-0 z-50">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16 items-center">
+     <a class="flex items-center space-x-3" href="#">
+      <img alt="Logo Opsidian Computer Shop, stylized letters O C S in blue and white with a modern tech style" class="w-12 h-12 rounded-full animate-spin-slow" height="48" src="https://storage.googleapis.com/a1aa/image/cbbe954e-99b4-4405-3890-a687c41cebe0.jpg" width="48"/>
+      <span class="font-bold text-xl tracking-wide">
+       Opsidian Computer Shop
+      </span>
+     </a>
+     <div class="hidden md:flex space-x-8 font-semibold text-lg">
+      <a class="hover:text-blue-300 transition" href="#services">
+       Layanan
+      </a>
+      <a class="hover:text-blue-300 transition" href="#gallery">
+       Galeri
+      </a>
+      <a class="hover:text-blue-300 transition" href="#testimonials">
+       Testimoni
+      </a>
+      <a class="hover:text-blue-300 transition" href="#contact">
+       Kontak
+      </a>
+     </div>
+     <div class="md:hidden">
+      <button aria-label="Toggle menu" class="focus:outline-none" id="menu-btn">
+       <i class="fas fa-bars text-2xl">
+       </i>
+      </button>
+     </div>
+    </div>
+   </div>
+   <div class="hidden md:hidden bg-blue-600" id="mobile-menu">
+    <a class="block px-4 py-3 border-b border-blue-500 hover:bg-blue-500 transition" href="#services">
+     Layanan
+    </a>
+    <a class="block px-4 py-3 border-b border-blue-500 hover:bg-blue-500 transition" href="#gallery">
+     Galeri
+    </a>
+    <a class="block px-4 py-3 border-b border-blue-500 hover:bg-blue-500 transition" href="#testimonials">
+     Testimoni
+    </a>
+    <a class="block px-4 py-3 hover:bg-blue-500 transition" href="#contact">
+     Kontak
+    </a>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="bg-blue-50 flex flex-col-reverse md:flex-row items-center max-w-7xl mx-auto px-6 py-16 md:py-24 gap-10">
+   <div class="md:w-1/2 text-center md:text-left space-y-6">
+    <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-blue-900">
+     Servis Laptop &amp; Komputer Profesional di Pagedangan, Tangerang
+    </h1>
+    <p class="text-blue-800 text-lg md:text-xl">
+     Opsidian Computer Shop siap membantu perbaikan hardware &amp; software, upgrade komponen, dan penjualan aksesoris komputer.
+    </p>
+    <a aria-label="Hubungi kami via WhatsApp" class="inline-block bg-blue-700 hover:bg-blue-800 text-white font-semibold px-8 py-4 rounded-lg shadow-lg transition" href="https://wa.me/6285664569249" rel="noopener noreferrer" target="_blank">
+     <i class="fab fa-whatsapp mr-3">
+     </i>
+     Hubungi via WhatsApp
+    </a>
+   </div>
+   <div class="md:w-1/2 flex justify-center">
+    <img alt="Teknisi profesional sedang memperbaiki laptop dengan alat servis di meja kerja modern" class="rounded-lg shadow-lg" height="300" src="https://storage.googleapis.com/a1aa/image/75dd7ebf-7928-4fa8-83de-a087b75b35eb.jpg" width="400"/>
+   </div>
+  </section>
+  <!-- Services Section -->
+  <section class="max-w-7xl mx-auto px-6 py-16" id="services">
+   <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">
+    Layanan Utama Kami
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-xl transition">
+     <img alt="Ikon hardware komputer berwarna biru dengan latar putih" class="mb-4" height="100" src="https://storage.googleapis.com/a1aa/image/5fd801b5-85b7-4b47-13e1-8ca188ae491d.jpg" width="100"/>
+     <h3 class="text-xl font-semibold mb-2">
+      Servis Hardware &amp; Software
+     </h3>
+     <p class="text-blue-800">
+      Perbaikan dan pemeliharaan laptop dan komputer, termasuk penggantian komponen dan instalasi software.
+     </p>
+    </div>
+    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-xl transition">
+     <img alt="Ikon upgrade komponen komputer RAM dan SSD berwarna biru dengan latar putih" class="mb-4" height="100" src="https://storage.googleapis.com/a1aa/image/e8d1818d-7d64-433f-e9d8-6745fa60d459.jpg" width="100"/>
+     <h3 class="text-xl font-semibold mb-2">
+      Upgrade Komponen
+     </h3>
+     <p class="text-blue-800">
+      Upgrade RAM, SSD, dan komponen lainnya untuk meningkatkan performa komputer Anda.
+     </p>
+    </div>
+    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-xl transition">
+     <img alt="Ikon aksesoris komputer seperti mouse dan keyboard berwarna biru dengan latar putih" class="mb-4" height="100" src="https://storage.googleapis.com/a1aa/image/f2cc97e2-96ac-4d7f-254f-ff5a4ebfa11c.jpg" width="100"/>
+     <h3 class="text-xl font-semibold mb-2">
+      Penjualan Aksesoris Komputer
+     </h3>
+     <p class="text-blue-800">
+      Menyediakan berbagai aksesoris komputer berkualitas seperti mouse, keyboard, dan lainnya.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Gallery Section -->
+  <section class="bg-blue-50 py-16 px-6" id="gallery">
+   <h2 class="text-3xl font-bold text-center text-blue-900 mb-12 max-w-7xl mx-auto">
+    Galeri Hasil Servis
+   </h2>
+   <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <img alt="Laptop yang telah selesai diperbaiki dengan layar menyala dan tampilan desktop bersih" class="rounded-lg shadow-md hover:scale-105 transition-transform" height="300" src="https://storage.googleapis.com/a1aa/image/2c1b8387-9c72-4bcb-4207-fa27e9a9c79f.jpg" width="400"/>
+    <img alt="Komputer desktop dengan casing terbuka dan komponen yang sudah dirakit rapi" class="rounded-lg shadow-md hover:scale-105 transition-transform" height="300" src="https://storage.googleapis.com/a1aa/image/5221f872-fea1-4fb8-ed17-5da99b5783ac.jpg" width="400"/>
+    <img alt="Proses upgrade RAM dan SSD pada laptop dengan teknisi sedang memasang komponen" class="rounded-lg shadow-md hover:scale-105 transition-transform" height="300" src="https://storage.googleapis.com/a1aa/image/c3a4d63d-8cce-4793-351b-70766d6d0f88.jpg" width="400"/>
+    <img alt="Berbagai aksesoris komputer seperti mouse, keyboard, dan headset yang dipajang rapi" class="rounded-lg shadow-md hover:scale-105 transition-transform" height="300" src="https://storage.googleapis.com/a1aa/image/498cddf3-b4fc-4ace-efa0-8796c8f62d56.jpg" width="400"/>
+    <img alt="Teknisi sedang memperbaiki motherboard laptop dengan alat khusus di meja kerja" class="rounded-lg shadow-md hover:scale-105 transition-transform" height="300" src="https://storage.googleapis.com/a1aa/image/87e3ffc5-5e1c-4eda-cf68-be13a03fdd3b.jpg" width="400"/>
+    <img alt="Layar laptop menampilkan proses instalasi software dengan progress bar" class="rounded-lg shadow-md hover:scale-105 transition-transform" height="300" src="https://storage.googleapis.com/a1aa/image/11e5add5-03cd-4989-9d49-0345f5af54fa.jpg" width="400"/>
+   </div>
+  </section>
+  <!-- Testimonials Section -->
+  <section class="max-w-7xl mx-auto px-6 py-16" id="testimonials">
+   <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">
+    Testimoni Pelanggan
+   </h2>
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col space-y-4">
+     <div class="flex items-center space-x-4">
+      <img alt="Foto profil pelanggan bernama Andi Ardianto, pria usia 30-an dengan latar biru" class="w-16 h-16 rounded-full object-cover" height="64" src="https://storage.googleapis.com/a1aa/image/e4837a4a-b600-4a81-6c5e-e886a47b5840.jpg" width="64"/>
+      <div>
+       <h3 class="font-semibold text-lg text-blue-900">
+        Andi Ardianto
+       </h3>
+       <p class="text-blue-700 text-sm">
+        Pengusaha
+       </p>
+      </div>
+     </div>
+     <p class="text-blue-800 flex-grow">
+      "Pelayanan cepat dan hasil servis sangat memuaskan. Laptop saya kembali seperti baru!"
+     </p>
+     <div class="text-yellow-400">
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star-half-alt">
+      </i>
+     </div>
+    </div>
+    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col space-y-4">
+     <div class="flex items-center space-x-4">
+      <img alt="Foto profil pelanggan bernama Rina Sari, wanita usia 25-30 tahun dengan latar biru" class="w-16 h-16 rounded-full object-cover" height="64" src="https://storage.googleapis.com/a1aa/image/c0fc04f7-2522-48f7-447b-518aa187c28d.jpg" width="64"/>
+      <div>
+       <h3 class="font-semibold text-lg text-blue-900">
+        Rina Sari
+       </h3>
+       <p class="text-blue-700 text-sm">
+        Mahasiswa
+       </p>
+      </div>
+     </div>
+     <p class="text-blue-800 flex-grow">
+      "Upgrade RAM dan SSD di Opsidian sangat membantu pekerjaan saya. Sangat direkomendasikan!"
+     </p>
+     <div class="text-yellow-400">
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+     </div>
+    </div>
+    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col space-y-4">
+     <div class="flex items-center space-x-4">
+      <img alt="Foto profil pelanggan bernama Dwi Wahyuni, wanita usia 35 tahun dengan latar biru" class="w-16 h-16 rounded-full object-cover" height="64" src="https://storage.googleapis.com/a1aa/image/e4895041-b8eb-48d7-2d50-6296075f4116.jpg" width="64"/>
+      <div>
+       <h3 class="font-semibold text-lg text-blue-900">
+        Dwi Wahyuni
+       </h3>
+       <p class="text-blue-700 text-sm">
+        Karyawan Swasta
+       </p>
+      </div>
+     </div>
+     <p class="text-blue-800 flex-grow">
+      "Aksesoris yang dijual lengkap dan berkualitas. Pelayanan ramah dan profesional."
+     </p>
+     <div class="text-yellow-400">
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star-half-alt">
+      </i>
+      <i class="fas fa-star">
+      </i>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="bg-blue-700 text-white py-16 px-6" id="contact">
+   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+    <div>
+     <h2 class="text-3xl font-bold mb-6">
+      Kontak &amp; Lokasi
+     </h2>
+     <p class="mb-4 text-lg">
+      Opsidian Computer Shop
+      <br/>
+      Jasa servis laptop dan komputer
+      <br/>
+      Pagedangan, Tangerang
+     </p>
+     <p class="mb-4 flex items-center space-x-3">
+      <i class="fas fa-phone-alt text-xl">
+      </i>
+      <a class="hover:underline" href="tel:+6285664569249">
+       0856-6456-9249
+      </a>
+     </p>
+     <p class="mb-4 flex items-center space-x-3">
+      <i class="fas fa-envelope text-xl">
+      </i>
+      <a class="hover:underline" href="mailto:opsidiancomputershop@gmail.com">
+       opsidiancomputershop@gmail.com
+      </a>
+     </p>
+     <p class="mb-4 flex items-center space-x-3">
+      <i class="fab fa-instagram text-xl">
+      </i>
+      <a class="hover:underline" href="https://www.instagram.com/opsidian.servis?igsh=Y2VlNjMzbXphamNj" rel="noopener noreferrer" target="_blank">
+       @opsidian.servis
+      </a>
+     </p>
+    </div>
+    <div class="rounded-lg overflow-hidden shadow-lg">
+     <img alt="Peta lokasi Opsidian Computer Shop di Pagedangan, Tangerang dengan marker dan jalan sekitar" class="w-full h-full object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/fd793c1c-480a-4547-3779-b2c9a3f30219.jpg" width="600"/>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-blue-200 py-6 text-center text-sm">
+   © 2024 Opsidian Computer Shop. All rights reserved.
+  </footer>
+  <script>
+   const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+</html>
